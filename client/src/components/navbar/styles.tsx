@@ -9,7 +9,7 @@ export const Container = styled.div`
   height: 70px;
   padding: 15px;
   color: #f1f1f1;
-  background-color: #333333;
+  /* background-color: #333333; */
 `;
 export const LogoContainer = styled.div`
   @media (min-width: 768px) {
@@ -25,7 +25,7 @@ export const Logo = styled.img`
   margin-left: 15px;
 `;
 export const Menu = styled.ul`
-  background-color: grey;
+  /* background-color: grey; */
   list-style-type: none;
   border-radius: 3px;
   display: flex;
@@ -49,7 +49,8 @@ export const LoginMenuItem = styled.li`
   margin: 0 2em 0 1em;
   border-radius: 6px;
   background-color: #d5a130;
-  color: #424242;
+  color: #ececec;
+  font-weight: 500;
   cursor: pointer;
   &:hover {
     color: #333333;
