@@ -1,10 +1,9 @@
 import { Navbar, Welcome, Footer, Services, Transactions } from './components';
-import './App.css';
 
 const App: React.FC = () => {
   return (
     <>
-      <div className='gradient-bg-welcome'>
+      <div>
         <Navbar />
         <Welcome />
       </div>
