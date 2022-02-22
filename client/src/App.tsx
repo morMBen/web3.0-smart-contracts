@@ -1,8 +1,10 @@
 import { Navbar, Welcome, Footer, Services, Transactions } from './components';
+import GlobalStyle from './styles/global';
 
 const App: React.FC = () => {
   return (
     <>
+      <GlobalStyle />
       <div>
         <Navbar />
         <Welcome />
