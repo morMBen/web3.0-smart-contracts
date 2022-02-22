@@ -5,7 +5,7 @@ const App: React.FC = () => {
   return (
     <>
       <GlobalStyle />
-      <div>
+      <div style={{ backgroundColor: '#333333' }}>
         <Navbar />
         <Welcome />
       </div>

@@ -95,7 +95,7 @@ export const MenuMobile = styled.ul`
 export const MenuItemMobile = styled.li`
   list-style-type: none;
   margin: 7px;
-  font-weight: bold;
+  font-weight: 400;
   font-size: 24px;
 `;
 export const ClosedMenuIconMobile = styled(AiOutlineClose)`

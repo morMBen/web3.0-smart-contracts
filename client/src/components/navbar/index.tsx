@@ -55,9 +55,8 @@ const Navbar: React.FC = () => {
           )}
           {isMenuOpen && (
             <MenuMobile>
-              {/* <li> */}
               <ClosedMenuIconMobile onClick={() => setIsMenuOpen(false)} />
-              {/* </li> */}
+
               {['Market', 'Exchange', 'Wakkets'].map(
                 (item: string, index: number) => {
                   return (
