@@ -34,6 +34,7 @@ export const LargeHeading = styled.h1`
   line-height: 2.25rem;
   color: white;
   background: -webkit-linear-gradient(#eee, #333);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 0.75rem 0;

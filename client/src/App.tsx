@@ -8,7 +8,7 @@ const App: React.FC = () => {
       <div
         style={{
           backgroundImage:
-            'linear-gradient(to right bottom, #041d03, #00241c, #002a35, #002e4d, #002d5b, #0e2c5b, #182a5b, #20295a, #292b50, #2e2e46, #32303d, #333333)',
+            'linear-gradient(to right bottom, #062105, #002319, #002329, #002234, #001f38, #0a1f38, #131f38, #191f37, #222436, #282835, #2e2e34, #333333)',
         }}
       >
         <Navbar />
