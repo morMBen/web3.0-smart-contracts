@@ -35,12 +35,16 @@ const Navbar: React.FC = () => {
     <>
       <Container>
         <LogoContainer>
-          <Logo src={logo} alt="crypty logo" />
+          <Logo src={logo} alt='crypty logo' />
         </LogoContainer>
         <Menu>
-          {['Market', 'Exchange', 'Wakkets'].map((item: string, index: number) => {
-            return <NavbarItem isMobile={false} key={item + index} title={item} />;
-          })}
+          {['Market', 'Exchange', 'Wakkets'].map(
+            (item: string, index: number) => {
+              return (
+                <NavbarItem isMobile={false} key={item + index} title={item} />
+              );
+            }
+          )}
           <LoginMenuItem>Login</LoginMenuItem>
         </Menu>
         <div style={{ display: 'flex', position: 'relative' }}>
@@ -53,9 +57,17 @@ const Navbar: React.FC = () => {
             <MenuMobile>
               <ClosedMenuIconMobile onClick={() => setIsMenuOpen(false)} />
 
-              {['Market', 'Exchange', 'Wakkets'].map((item: string, index: number) => {
-                return <NavbarItem isMobile={true} key={item + index} title={item} />;
-              })}
+              {['Market', 'Exchange', 'Wakkets'].map(
+                (item: string, index: number) => {
+                  return (
+                    <NavbarItem
+                      isMobile={true}
+                      key={item + index}
+                      title={item}
+                    />
+                  );
+                }
+              )}
             </MenuMobile>
           )}
         </div>

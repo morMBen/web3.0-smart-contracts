@@ -1,3 +1,4 @@
+import Input from '../input';
 import { AiFillPlayCircle } from 'react-icons/ai';
 import { SiEthereum } from 'react-icons/si';
 import { BsInfoCircle } from 'react-icons/bs';
@@ -12,8 +13,9 @@ import {
   ConnectButton,
   Grid,
   GridItem,
-  Card,
+  CardContainer,
   CardBackground,
+  WelcomeForm,
 } from './styles';
 
 const Welcome: React.FC = () => {
@@ -40,7 +42,7 @@ const Welcome: React.FC = () => {
             <GridItem radiusBR={20}>Blockchain</GridItem>
           </Grid>
         </Section>
-        <Card>
+        <CardContainer>
           <CardBackground>
             <div>
               <div>
@@ -55,7 +57,18 @@ const Welcome: React.FC = () => {
               </main>
             </div>
           </CardBackground>
-        </Card>
+          <WelcomeForm>
+            <Input
+              handleChange={() => {
+                console.log('brr');
+              }}
+              name='brr'
+              type='text'
+              value='fsadf'
+              placeholder=''
+            />
+          </WelcomeForm>
+        </CardContainer>
       </Main>
     </Container>
   );

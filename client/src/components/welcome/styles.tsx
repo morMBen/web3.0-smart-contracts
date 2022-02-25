@@ -114,10 +114,11 @@ export const GridItem = styled.div<GridItemProps>`
   }
 `;
 
-export const Card = styled.div`
+export const CardContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   width: 100%;
   margin-top: 2.5rem;
   @media (min-width: 768px) {
@@ -189,5 +190,23 @@ export const CardBackground = styled.div`
         margin-top: 0.75rem;
       }
     }
+  }
+`;
+
+export const WelcomeForm = styled.div`
+  padding: 1.25rem;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background: rgba(11, 11, 12, 0.28);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.7px);
+  -webkit-backdrop-filter: blur(6.7px);
+  border: 1px solid rgba(74, 126, 255, 0.01);
+  @media (min-width: 640px) {
+    width: 24rem;
   }
 `;
