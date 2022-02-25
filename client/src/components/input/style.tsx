@@ -8,4 +8,6 @@ export interface InputProps
   handleChange?: () => void;
 }
 
-export const Input = styled.input<InputProps>``;
+export const Input = styled.input<InputProps>`
+  color: red;
+`;
