@@ -1,4 +1,5 @@
 import Input from '../input';
+import { Line } from '../../styles/global';
 import { AiFillPlayCircle } from 'react-icons/ai';
 import { SiEthereum } from 'react-icons/si';
 import { BsInfoCircle } from 'react-icons/bs';
@@ -59,14 +60,46 @@ const Welcome: React.FC = () => {
           </CardBackground>
           <WelcomeForm>
             <Input
-              handleChange={() => {
+              onChange={() => {
                 console.log('brr');
               }}
-              name='brr'
+              name='addressTo'
               type='text'
-              value='fsadf'
-              placeholder=''
+              step='0.0001'
+              value=''
+              placeholder='Address To'
             />
+            <Input
+              onChange={() => {
+                console.log('brr');
+              }}
+              name='amount'
+              type='number'
+              step='0.0001'
+              value=''
+              placeholder='Amount (ETH)'
+            />
+            <Input
+              onChange={() => {
+                console.log('brr');
+              }}
+              name='keyword'
+              type='text'
+              step='0.0001'
+              value=''
+              placeholder='Keyword (Gif)'
+            />
+            <Input
+              onChange={() => {
+                console.log('brr');
+              }}
+              name='message'
+              type='text'
+              step='0.0001'
+              value=''
+              placeholder='Enter Message'
+            />
+            <Line />
           </WelcomeForm>
         </CardContainer>
       </Main>
