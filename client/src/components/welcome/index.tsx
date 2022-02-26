@@ -93,7 +93,7 @@ const Welcome: React.FC = () => {
 
             <GlobalStyled.Line />
 
-            {false ? (
+            {true ? (
               <Loader />
             ) : (
               <Styled.SendButton type='button' onClick={handleSubmit}>

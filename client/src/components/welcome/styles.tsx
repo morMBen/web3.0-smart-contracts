@@ -12,7 +12,8 @@ export const Main = styled.div`
   justify-content: space-between;
   align-items: start;
   padding: 1.5rem 0.5rem;
-  @media (min-width: 768px) {
+  flex-direction: column;
+  @media (min-width: 990px) {
     flex-direction: row;
     padding: 2rem;
   }
@@ -24,7 +25,7 @@ export const Section = styled.div`
   justify-content: start;
   flex-direction: column;
 
-  @media (min-width: 768px) {
+  @media (min-width: 990px) {
     margin-right: 2.5rem;
   }
 `;
@@ -121,7 +122,7 @@ export const CardContainer = styled.div`
   flex-direction: column;
   width: 100%;
   margin-top: 2.5rem;
-  @media (min-width: 768px) {
+  @media (min-width: 990px) {
     margin-top: 0;
   }
 `;
