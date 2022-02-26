@@ -210,3 +210,17 @@ export const WelcomeForm = styled.div`
     width: 24rem;
   }
 `;
+
+export const SendButton = styled.button`
+  color: white;
+  width: 100%;
+  margin: 0.5rem 0;
+  border: 1px solid #3d4f7c;
+  padding: 0.5rem;
+  background: transparent;
+  border-radius: 50px;
+  cursor: pointer;
+  &:hover {
+    background: rgba(255, 255, 255, 0.18);
+  }
+`;
