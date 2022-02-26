@@ -6,7 +6,7 @@ const Input: React.FC<Style.InputProps> = ({
   name,
   value,
   type,
-  handleChange,
+  onChange,
 }) => {
   return (
     <Style.Input
@@ -14,7 +14,7 @@ const Input: React.FC<Style.InputProps> = ({
       name={name}
       type={type}
       value={value}
-      onChange={handleChange}
+      onChange={onChange}
     ></Style.Input>
   );
 };
