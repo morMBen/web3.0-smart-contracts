@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
 *{
@@ -14,4 +14,11 @@ export default createGlobalStyle`
     margin: 0 auto;
 }
 
+`;
+
+export const Line = styled.div`
+  height: 1px;
+  width: 100%;
+  background: grey;
+  margin: 0.5rem 0;
 `;
